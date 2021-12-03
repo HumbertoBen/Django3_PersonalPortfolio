@@ -30,8 +30,8 @@
     </div>
     <div class="title">
       <div class="smallsep heading"></div>
-      <h1 class="heading"> LikimiaD Portfolio</h1>
-      <h2 class="heading">Clean & Simple</h2>
+      <h1 class="heading"> Humberto Benavides</h1>
+      <h2 class="heading">Management Information Systems Analyst</h2>
       <a class="smoothscroll" href="#about">
         <div class="mouse">
           <div class="wheel"></div>
@@ -51,7 +51,7 @@
       <div class="row">
         <h1>About</h1>
         <div class="block"></div>
-        <p>In 2019 I started my acquaintance with programming languages, at the moment I can work with JavaScript (React, Redux, Node.JS libraries), Python (SQLalchemy), C++, C#, PostgreSQL. In 2021 I entered the Moscow University NITU MISSIS on "Informatics and Computer Science" with the possibility of obtaining a certificate level CEFR.</p>
+        <p>In 2019 I started my acquaintance with programming languages, at the moment I can work with Django framework, SQL, MySQL, PostgreSQL, and Python programming for minor projects. My main attraction to programming has always been with the cleaning and visualization of data. In May of 2021, I graduated from Texas A&M International University in the city of Laredo, Texas with a bachelors degree in Management Information Systems and Data Analytics.</p>
       </div>
       <div class="row">
         {% for about in about %}
@@ -66,7 +66,7 @@
   
   <!-- Projects Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
+
   <section id="projects">
     <div class="container">
       <div class="row">
@@ -78,11 +78,13 @@
         <div class="three columns"> <img src="{{ project.image.url }}" width="220" height="220" alt="" />
           <h4>{{ project.title }}</h4>
           <p>{{ project.desription }}</p>
+          <a href='{{ project.url }}'><button>Project Link</button></a>
       </div>
-      {% endfor %}    
+      {% endfor %}
+      </div>
     </div>
   </section>
-  
+
   <!-- Skills Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
@@ -110,7 +112,7 @@
           {% endfor %}
         </div>
         <div class="four columns">
-          <p>I am also fond of photography, I really like taking pictures thanks to models in Blender, ZBrush and regular games. My works can be found on ArtStation under my nickname LikimiaD.</p>
+          <p>I really enjoy creating personal computers from scratch as actual projects for myself or for clients that are searching for budget friendly builds to enter the world of pc gaming without breaking the bank.</p>
         </div>
       </div>
     </div>
@@ -122,8 +124,8 @@
   <footer>
     <div class="container">
       <div class="nine columns">
-        <p>© 2021 LikimiaD</p>
-        <p>The site was written entirely in Django. Visual part using jquery.</p>
+        <p>© 2021 Humberto R. Benavides</p>
+        <p>This site was created entirely in the Django Framework. Front-end was designed with JQuery and JS .</p>
       </div>
     </div>
   </footer>
