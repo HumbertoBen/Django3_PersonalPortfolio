@@ -6,6 +6,6 @@ from datetime import date
 
 class Blogs(models.Model):
     title = models.CharField(max_length=100)
-    small_desription = models.CharField(max_length=200)
-    full_desription = models.CharField(max_length=1000, default='')
+    small_description = models.CharField(max_length=200)
+    full_description = models.CharField(max_length=1000, default='')
     date = models.DateField(default=date.today)

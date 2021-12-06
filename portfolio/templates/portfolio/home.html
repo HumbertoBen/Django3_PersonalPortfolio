@@ -57,7 +57,7 @@
         {% for about in about %}
         <div class="six columns">
           <h3><span class="typcn typcn-device-desktop icon"></span>{{about.title}}</h3>
-          <p>{{about.desription}}</p>
+          <p>{{about.description}}</p>
         </div>
         {% endfor %}
       </div>
@@ -77,7 +77,7 @@
         {% for project in projects %}
         <div class="three columns"> <img src="{{ project.image.url }}" width="220" height="220" alt="" />
           <h4>{{ project.title }}</h4>
-          <p>{{ project.desription }}</p>
+          <p>{{ project.description }}</p>
           <a href='{{ project.url }}'><button>Project Link</button></a>
       </div>
       {% endfor %}
@@ -96,7 +96,7 @@
           {% for skill_about in skill_about %}
         <div class="one-third column">
           <h3>{{skill_about.title}}</h3>
-          <p>{{skill_about.desription}}</p>
+          <p>{{skill_about.description}}</p>
         </div>
         {% endfor %}
       </div>
