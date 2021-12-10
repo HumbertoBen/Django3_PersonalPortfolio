@@ -23,6 +23,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
+    path('dashboard/', include('dashboard.urls'), name = "dashboard"),
     path('blog/', include('blog.urls'), name = "blog"),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
